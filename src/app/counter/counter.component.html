@@ -1,0 +1,24 @@
+<h4>{{player1Set1Display}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{player2Set1Display}}</h4>
+<h4>{{player1Set2Display}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{player2Set2Display}}</h4>
+<h4>{{player1Set3Display}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{player2Set3Display}}</h4>
+<h5>{{player1TiebreakScore}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{player2TiebreakScore}}</h5>
+
+ 
+ <div class="row">
+  <div  class = "container column" (click)="incrementPoint1()">
+    <img class="scorer" src="https://c7.uihere.com/files/65/414/530/tennis-balls-racket-clip-art-simple-tennis-ball-png-thumb.jpg">
+    <h4 class="score" >{{player1GameScoreDisplay}}</h4>
+  </div>
+
+  <div class = "container column" (click)="incrementPoint2()">
+  <img img class="scorer"
+  src="https://c7.uihere.com/files/65/414/530/tennis-balls-racket-clip-art-simple-tennis-ball-png-thumb.jpg" >
+    <h4  class="score" >{{[player2GameScoreDisplay]}} </h4>
+  </div>
+ </div>
+
+ <div (click)="resetButton()">    
+    <h4>Reset</h4>
+  </div>
+
+ <h1>{{winnerText}}</h1>
